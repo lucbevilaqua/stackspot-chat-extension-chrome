@@ -1,5 +1,13 @@
-<div class="message-container">
-  <b [ngClass]="{'own-message': message.own, 'other-message': !message.own}">
-    {{ message.text }}
-  </b>
+<div class="load" *ngIf="message?.loading; else messageBox">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
 </div>
+
+<ng-template #messageBox>
+  <div class="message-container">
+    <b [ngClass]="{'own-message': message.own, 'other-message': !message.own}">
+      {{ message.text }}
+    </b>
+  </div>
+</ng-template>

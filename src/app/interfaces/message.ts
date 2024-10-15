@@ -1,4 +1,5 @@
 export interface Message {
   text: string,
-  own: boolean
+  own: boolean,
+  loading?: boolean
 }
