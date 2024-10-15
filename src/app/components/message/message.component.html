@@ -1,0 +1,5 @@
+<div class="message-container">
+  <b [ngClass]="{'own-message': message.own, 'other-message': !message.own}">
+    {{ message.text }}
+  </b>
+</div>

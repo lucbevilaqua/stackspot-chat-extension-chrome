@@ -1,0 +1,24 @@
+.message-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "other own";
+}
+
+.own-message {
+  grid-area: own;
+  text-align: right;
+  background-color: #A8A8A8;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.other-message {
+  grid-area: other;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
